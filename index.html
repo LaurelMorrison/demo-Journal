@@ -10,19 +10,15 @@
 
 <body>
     <!---Header--->
-    <Header>
-        <div class="header">
-            <header>
-                <H1 class="mainHeader">Martin's Aquarium</H1>
-            </header>
-        </div>
+    <div class="mainHeader">
+    <H1>Daily Journal</H1>
+    </div>
     <!---Navigation--->
         <div class="navbar">
             <nav>
 
             </nav>
         </div>
-    </Header>
     <!---Aside - Highlights--->
     <aside>
         <div class="articleHighlight">
@@ -31,13 +27,40 @@
     </aside>
     <!---Main - Entries--->
     <main>
-        
+        <div class="showPost">
+
+        </div>
     </main>
     <!---Form--->
+    <form class="form">
+        <label for="textline">Topic:</label>
+        <input id="textline" type="text" class="topicLine">
+
+        <label for="textareabox">Date:</label>
+        <input id="textline" type="text" class="topicLine">
+
+        <label for="datebox">Entry:</label>
+        <textarea id="datebox" type="text" rows="4" cols="50">
+            Enter text header </textarea>
+
+        <label  for="moods"> Select a mood: </label>
+        <select  name="moodSelect" class="selectMood">
+            <option value="curious">Curious</option>
+            <option value="sad">Sad</option>
+            <option value="happy">Happy</option>
+            <option value="mad">Mad</option>
+            <option value="excited">Excited</option>
+        </select>
+
+        <button type="button" id="submitButton">Submit</button>
+    </form>
     <!---Footer--->
     <footer>
         <p>&copy; 2021 Laurel Morrison </p>
     </footer>
+
+    <script type="module" src="./scripts/main.js"></script>
+
 </body>
 
 </html>
